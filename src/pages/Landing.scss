@@ -1,0 +1,24 @@
+html {
+  background-color: #27221f;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  font-size: 8vh;
+  font-weight: 300;
+  width: 9em;
+}
+
+.xueImage {
+  height: 85vh 
+}
