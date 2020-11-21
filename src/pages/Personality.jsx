@@ -72,15 +72,6 @@ const galleryEntry = (topLeft, bottomLeft, center, topRight, bottomRight, captio
 
 const Gallery = () => (
   <div className="gallery_box">
-    {galleryEntry(
-      '/images/food/cookies.jpg',
-      '/images/food/jamaican.jpg',
-      '/images/food/cider_carboys.jpg',
-      '/images/food/oven_wings.jpg',
-      '/images/food/hotpot_table.jpg',
-      'I once started experimenting with apple cider fermentation with my roommate at Dartmouth. Two years later my projects are still going strong. Having made over 20 gallons of the stuff, it only gets better with experience. I\'ve since expanded to kombucha and mead. The other images reflect my increased appreciation for food once the pandemic hit.',
-      ['project', 'food', 'campus life'],
-    )}
 
     {galleryEntry(
       '/images/army/graduation.jpg',
@@ -100,6 +91,16 @@ const Gallery = () => (
       '/images/outdoors/sport_climb.jpg',
       'My experience in the Dartmouth Outing Club began with attending First-Year Trips in 2018. Since then, I\'ve gone on many more trips with friends and strangers, and become a trip leader myself, as well as a leader in People of Color Outdoors, Ledyard Canoe Club, and Bait and Bullet.',
       ['outdoors', 'leadership', 'trips'],
+    )}
+
+    {galleryEntry(
+      '/images/food/cookies.jpg',
+      '/images/food/jamaican.jpg',
+      '/images/food/cider_carboys.jpg',
+      '/images/food/oven_wings.jpg',
+      '/images/food/hotpot_table.jpg',
+      'I once started experimenting with apple cider fermentation with my roommate at Dartmouth. Two years later my projects are still going strong. Having made over 20 gallons of the stuff, it only gets better with experience. I\'ve since expanded to kombucha and mead. The other images reflect my increased appreciation for food once the pandemic hit.',
+      ['project', 'food', 'campus life'],
     )}
 
     {galleryEntry(
