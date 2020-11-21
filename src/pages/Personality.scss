@@ -10,16 +10,18 @@
 }
 
 .tiger_left {
-  margin-top: 2em;
+  margin-top: 5em;
+  margin-left: 2em;
 }
 
 .tiger_right {
-  margin-top: -2em;
+  margin-top: 2em;
+  margin-right: 5em;
 }
 
 .main_text {
   display: flex;
-  justify-content: center;;
+  justify-content: center;
   align-items: center;
   font-size: 6em;
   font-weight: 400;
@@ -111,6 +113,8 @@
 }
 
 .overlay {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   bottom: 0;

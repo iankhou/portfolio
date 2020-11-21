@@ -47,7 +47,7 @@ const galleryEntry = (topLeft, bottomLeft, center, topRight, bottomRight, captio
 
     </div>
     <div className="main_story_image">
-      <img src="/images/cider_carboys.png" alt="" />
+      <img src={center} alt="" />
       <div className="overlay">
         <div className="overlay_text">{caption}</div>
       </div>
@@ -73,23 +73,43 @@ const galleryEntry = (topLeft, bottomLeft, center, topRight, bottomRight, captio
 const Gallery = () => (
   <div className="gallery_box">
     {galleryEntry(
-      '/images/cider_carboys.png',
-      '/images/cider_carboys.png',
-      '/images/cider_carboys.png',
-      '/images/cider_carboys.png',
-      '/images/cider_carboys.png',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      ['Hi', 'Bye'],
+      '/images/food/cookies.png',
+      '/images/food/jamaican.png',
+      '/images/food/cider_carboys.png',
+      '/images/food/oven_wings.png',
+      '/images/food/hotpot_table.png',
+      'I once started experimenting with apple cider fermentation with my roommate at Dartmouth. Two years later my projects are still going strong. Having made over 20 gallons of the stuff, it only gets better with experience. I\'ve since expanded to kombucha and mead. The other images reflect my increased appreciation for food once the pandemic hit.',
+      ['project', 'food', 'campus life'],
     )}
 
     {galleryEntry(
-      '/images/cider_carboys.png',
-      '/images/cider_carboys.png',
-      '/images/cider_carboys.png',
-      '/images/cider_carboys.png',
-      '/images/cider_carboys.png',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      ['Hi', 'Bye'],
+      '/images/army/graduation.png',
+      '/images/army/mre.png',
+      '/images/army/winter_bike.png',
+      '/images/army/formation.png',
+      '/images/army/army_ftx_me.png',
+      'I enlisted in the Army out of high school, having been bored by constant schooling for over 12 years. I went to basic training and advanced individual training over what would have been a normal school year. I\'m now a cadet in Army ROTC at Dartmouth.',
+      ['military', 'leadership'],
+    )}
+
+    {galleryEntry(
+      '/images/outdoors/trips_2018.png',
+      '/images/outdoors/ice_climbing.png',
+      '/images/outdoors/trips_2019.png',
+      '/images/outdoors/kayak_nour.png',
+      '/images/outdoors/sport_climb.png',
+      'My experience in the Dartmouth Outing Club began with attending First-Year Trips in 2018. Since then, I\'ve gone on many more trips with friends and strangers, and become a trip leader myself, as well as a leader in People of Color Outdoors, Ledyard Canoe Club, and Bait and Bullet.',
+      ['outdoors', 'leadership', 'trips'],
+    )}
+
+    {galleryEntry(
+      '/images/nature/summer_hike.jpg',
+      '/images/nature/acadia_ray.jpg',
+      '/images/nature/jack_bike.jpg',
+      '/images/nature/hogs.jpg',
+      '/images/nature/graffiti.jpg',
+      'Although the pandemic turned my routines and plans upside-down, I still managed to find pleasure in traveling locally. Enjoy these scenes and images from the Great Northeast.',
+      ['outdoors', 'nature', 'family', 'travel'],
     )}
   </div>
 );
