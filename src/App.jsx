@@ -6,7 +6,7 @@ import {
 import Landing from './pages/Landing';
 import Professional from './pages/Professional';
 import Personality from './pages/Personality';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

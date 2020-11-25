@@ -3,22 +3,93 @@ html {
   color: white;
 }
 
-.content {
+
+
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .quote {
+    display: flex;
+    align-items: center;
+    font-size: 8vh;
+    font-weight: 300;
+    width: 9em;
+    font-family: 'adam.cg_proregular';
+    
+  }
+  .xueImage {
+    height: 85vh 
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1em;
+    width: 100%
+  }
+  .quote {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 300;
+    max-width: 9em;
+    font-family: 'adam.cg_proregular';
+  }
+  .xueImage {
+    height: 30em 
+  }
+}
+
+.intro {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-.quote {
-  display: flex;
   align-items: center;
-  font-size: 8vh;
-  font-weight: 300;
-  width: 9em;
+};
+
+.profile-text {
+  h1 {
+    font-size: 3em;
+    margin: 0 0;
+  }
+  p {
+    font-size: 1.5em;
+    text-align: left;
+    width: 15em;
+    margin: 0.8em 0;
+  }
+  width: 40%;
+  margin: 0 1em;
+};
+
+.profile-image {
+  img {
+    width: 100%;
+  }
+  width: 34em;
+  margin: 0 1em;
+};
+
+.nav-link-button {
+  border: 0.15em solid white;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
-.xueImage {
-  height: 85vh 
+.content-box {
+  display: flex;
+  flex-direction: row;
 }
