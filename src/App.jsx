@@ -28,15 +28,9 @@ function App() {
             </ul>
           </nav>
           <Switch>
-            <Route path="/professional">
-              <Professional />
-            </Route>
-            <Route path="/personality">
-              <Personality />
-            </Route>
-            <Route path="/">
-              <Landing />
-            </Route>
+            <Route path="/professional" component={Professional} />
+            <Route path="/personality" component={Personality} />
+            <Route component={Landing} />
           </Switch>
         </div>
       </Router>
