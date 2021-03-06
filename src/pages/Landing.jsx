@@ -25,13 +25,13 @@ const Landing = () => (
             <p>
               I&apos;m Ian, a junior at Dartmouth College studying computer science and Chinese.
               I currently work part-time as a software engineer at Mana, a startup based in San
-              Francisco, and as a software developer and consultant the DALI Lab, a startup-like
+              Francisco, and as a software developer in the DALI Lab, a startup-like
               experiential learning lab. I am a cadet in Dartmouth ROTC. Learn more about my
               career here:
             </p>
             <Link to="/professional" className="nav-link-button">Professional</Link>
             <p>
-              I love food, exercise, and the outdoors. At Dartmouth, I play trumpet in the DSO and
+              I love food, exercise, and the outdoors. At Dartmouth, I play lead trumpet in the DSO and
               lead in the DOC in People of Color Outdoors, Ledyard Canoe Club, and Bait and
               Bullet. You can often find me cooking hotpot in a common room on campus.
               Learn more about my personal life here:
