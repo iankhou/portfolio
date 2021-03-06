@@ -31,8 +31,8 @@ const Landing = () => (
             </p>
             <Link to="/professional" className="nav-link-button">Professional</Link>
             <p>
-              I love food, exercise, and the outdoors. At Dartmouth, I play lead trumpet in the DSO and
-              lead in the DOC in People of Color Outdoors, Ledyard Canoe Club, and Bait and
+              I love food, exercise, and the outdoors. At Dartmouth, I play lead trumpet in the DSO
+              and lead in the DOC in People of Color Outdoors, Ledyard Canoe Club, and Bait and
               Bullet. You can often find me cooking hotpot in a common room on campus.
               Learn more about my personal life here:
             </p>

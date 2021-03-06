@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-danger */
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -36,8 +37,8 @@ const Professional = () => {
   );
 };
 
-const professionalEntryLeft = (image, tags, text, alt) => (
-  <div className="work-box">
+const professionalEntry = (side, image, tags, text, alt) => {
+  const Img = () => (
     <div className="main-story-image professional-image">
       <div>
         <img src={image} alt={alt} />
@@ -48,36 +49,38 @@ const professionalEntryLeft = (image, tags, text, alt) => (
         ))}
       </div>
     </div>
-    <div className="story-text">
-      {text}
-    </div>
-  </div>
-);
+  );
 
-const professionalEntryRight = (image, tags, text, alt) => (
-  <div className="work-box">
+  const Txt = () => (
     <div className="story-text">
       {text}
     </div>
-    <div className="main-story-image professional-image">
-      <div>
-        <img src={image} alt={alt} />
-      </div>
-      <div className="story-tags">
-        {tags.map((tag) => (
-          <p>{tag}</p>
-        ))}
-      </div>
+  );
+
+  return (
+    <div className="work-box">
+      {side === 'left' ? (
+        <>
+          <Img />
+          <Txt />
+        </>
+      ) : (
+        <>
+          <Txt />
+          <Img />
+        </>
+      )}
+
     </div>
-  </div>
-);
+  );
+};
 
 const Work = () => (
   <>
-    {professionalEntryLeft('images/mana.jpg', ['ML', 'Docker', 'Python', 'Server', 'Linux', 'RPC', 'PostgreSQL', 'Git'], 'Over the summer and fall of 2020 I had the pleasure of working for Mana, a San Francisco-based company working to help people to better spend their time in their mobile app. I was hired as a machine-learning engineer, and built a pipeline that improved predictions by over 15%. Working with this team has brought me mentorship beyond any other professional experience and encouraged me to further pursue applied machine learning.', 'Mana')}
-    {professionalEntryRight('images/dali-logo.jpg', ['HTML', 'CSS', 'JS', 'React', 'React Native', 'Node.js', 'MongoDB', 'Git'], 'The DALI Lab is a startup-like experiential learning program at Dartmouth College. Working at the Lab has been a transformative experience for me, as it\'s where I learned a large portion of my knowledge in application development. The range of projects I\'ve worked on there include an interactive site to educate communities about email phishing, a stock market simulator with AI-generated data, and a groundbreaking app to track and identify undiagnosed illnesses. Working there has given me opportunities to work on projects that have social impacts beyond the Lab.', 'DALI')}
-    {professionalEntryLeft('images/dartmouth.jpg', ['Python', 'Java', 'OOP', 'Encrytion', 'AI', 'ML', 'C', 'Bash', 'HTML', 'CSS', 'JS', 'Auth'], 'My journey in computer science began my Freshman year at Dartmouth, when I first took CS1. Since then I\'ve tutored nine students in that class and been a teaching assistant in another foundational course and Full-Stack Web Development. Many concepts I apply in my work as a software engineer are informed and inspired by concepts learned in Dartmouth classes.', 'Mana')}
-    {professionalEntryRight('images/army.jpg', ['Leadership', 'Duty', 'Service'], 'Enlisting in the Army after high school was one of the most consequential decisions of my life. Between finding purpose in serving my local and national community and meeting soldiers from all walks of life, my experience in the Army has been eye-opening and deeply satisfying. I served as an intelligence analyst from 2017 to 2019. I am now a cadet in Dartmouth ROTC and will commission into the Army Reserve as an officer in 2022.', 'DALI')}
+    {professionalEntry('left', 'images/mana.png', ['ML', 'Docker', 'Python', 'Server', 'Linux', 'RPC', 'PostgreSQL', 'Git'], 'Over the summer and fall of 2020 I had the pleasure of working for Mana, a San Francisco-based company working to help people to better spend their time in their mobile app. I was hired as a machine-learning engineer, and built a pipeline that improved predictions by over 15%. Working with this team has brought me mentorship beyond any other professional experience and encouraged me to further pursue applied machine learning.', 'Mana')}
+    {professionalEntry('right', 'images/dali-logo.png', ['HTML', 'CSS', 'JS', 'React', 'React Native', 'Node.js', 'MongoDB', 'Git'], 'The DALI Lab is a startup-like experiential learning program at Dartmouth College. Working at the Lab has been a transformative experience for me, as it\'s where I learned a large portion of my knowledge in application development. The range of projects I\'ve worked on there include an interactive site to educate communities about email phishing, a stock market simulator with AI-generated data, and a groundbreaking app to track and identify undiagnosed illnesses. Working there has given me opportunities to work on projects that have social impacts beyond the Lab.', 'DALI')}
+    {professionalEntry('left', 'images/dartmouth.png', ['Python', 'Java', 'OOP', 'Encrytion', 'AI', 'ML', 'C', 'Bash', 'HTML', 'CSS', 'JS', 'Auth'], 'My journey in computer science began my Freshman year at Dartmouth, when I first took CS1. Since then I\'ve tutored nine students in that class and been a teaching assistant in another foundational course and Full-Stack Web Development. Many concepts I apply in my work as a software engineer are informed and inspired by concepts learned in Dartmouth classes.', 'Mana')}
+    {professionalEntry('right', 'images/army.png', ['Leadership', 'Duty', 'Service'], 'Enlisting in the Army after high school was one of the most consequential decisions of my life. Between finding purpose in serving my local and national community and meeting soldiers from all walks of life, my experience in the Army has been eye-opening and deeply satisfying. I served as an intelligence analyst from 2017 to 2019. I am now a cadet in Dartmouth ROTC and will commission into the Army Reserve as an officer in 2022.', 'DALI')}
   </>
 );
 
