@@ -5,10 +5,10 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import './common.scss';
-import './Professional.scss';
+import '../common.scss';
+import './styles.scss';
 
-const Professional = () => {
+export default () => {
   const [content, setContent] = useState(true);
   return (
     <div>
@@ -454,5 +454,3 @@ const Resume = () => (
     </div>
   </div>
 );
-
-export default Professional;

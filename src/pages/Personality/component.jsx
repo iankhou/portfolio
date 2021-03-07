@@ -2,11 +2,11 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import '../App.scss';
-import './common.scss';
-import './Personality.scss';
+// import '../App.scss';
+import '../common.scss';
+import './styles.scss';
 
-const Personality = () => {
+export default () => {
   const [content, setContent] = useState(true);
   return (
     <div>
@@ -121,5 +121,3 @@ const About = () => (
     About
   </div>
 );
-
-export default Personality;

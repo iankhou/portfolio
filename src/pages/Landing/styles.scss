@@ -12,6 +12,10 @@ $breakpoint-tablet: 768px;
     margin-left: 2em;
     margin-right: 2em;
   }
+  .content-box {
+    display: flex;
+    flex-direction: row;
+  }
   .quote {
     display: flex;
     align-items: center;
@@ -22,6 +26,20 @@ $breakpoint-tablet: 768px;
   }
   .xueImage {
     height: 85vh;
+  }
+  .profile-text {
+    h1 {
+      font-size: 3em;
+      margin: 0 0;
+    }
+    p {
+      font-size: 1.5em;
+      text-align: left;
+      width: 15em;
+      margin: 0.8em 0;
+    }
+    width: 40%;
+    margin: 0 1em;
   }
 }
 
@@ -34,6 +52,11 @@ $breakpoint-tablet: 768px;
     margin: 0 1em;
     width: 100%;
   }
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100%;
+  }
   .quote {
     display: flex;
     align-items: center;
@@ -45,27 +68,26 @@ $breakpoint-tablet: 768px;
   .xueImage {
     height: 30em;
   }
+  .profile-text {
+    h1 {
+      font-size: 3em;
+      margin: 0 0;
+    }
+    p {
+      font-size: 1.5em;
+      text-align: left;
+      width: 15em;
+      margin: 0.8em 0;
+    }
+    width: 100%;
+    margin: 0 1em;
+  }
 }
 
 .intro {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.profile-text {
-  h1 {
-    font-size: 3em;
-    margin: 0 0;
-  }
-  p {
-    font-size: 1.5em;
-    text-align: left;
-    width: 15em;
-    margin: 0.8em 0;
-  }
-  width: 40%;
-  margin: 0 1em;
 }
 
 .profile-image {
@@ -84,9 +106,4 @@ $breakpoint-tablet: 768px;
   padding: 0.5em;
   font-size: 1em;
   text-transform: uppercase;
-}
-
-.content-box {
-  display: flex;
-  flex-direction: row;
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import './Landing.scss';
+import './styles.scss';
 import {
   Link,
 } from 'react-router-dom';
 
-const Landing = () => (
+export default () => (
   <>
     <div className="content">
       <div className="quote">THERE IS ALWAYS SOMETHING NEW TO LEARN.</div>
@@ -43,5 +43,3 @@ const Landing = () => (
     </div>
   </>
 );
-
-export default Landing;
