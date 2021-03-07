@@ -1,27 +1,63 @@
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  .wb-left {
+    flex-direction: column;
+  }
+
+  .wb-right {
+    flex-direction: column;
+  }
+
+  .work-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8em 10em;
+  }
+  .story-text {
+    min-width: 20em;
+    font-size: 2em;
+    text-align: justify;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .wb-left {
+    flex-direction: row;
+  }
+
+  .wb-right {
+    flex-direction: row-reverse;
+  }
+
+  .work-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8em 10em;
+  }
+  .story-text {
+    min-width: 20em;
+    max-width: 30em;
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .story-text {
+    font-size: 1.8em;
+  }
+}
+
 .side-image {
   width: 25em;
-}
-
-.work-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 8em 10em;
-}
-
-.story-text {
-  min-width: 20em;
-  max-width: 25em;
-  font-size: 1.8em;
-  text-align: justify;
-  margin: -2em 1em 0 1em;
 }
 
 .professional-image {
   height: 100%;
   min-width: 20em;
   max-width: 30em;
+  margin: 0 3em;
 }
 
 .resume {
