@@ -1,4 +1,4 @@
-$breakpoint-tablet: 768px;
+$breakpoint-tablet: 1000px;
 @media (max-width: $breakpoint-tablet) {
   .wb-left {
     flex-direction: column;
@@ -40,7 +40,7 @@ $breakpoint-tablet: 768px;
   .story-text {
     min-width: 20em;
     max-width: 30em;
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 }
 

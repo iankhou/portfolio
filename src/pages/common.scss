@@ -1,9 +1,10 @@
-$breakpoint-tablet: 768px;
+$breakpoint-tablet: 1000px;
 @media (max-width: $breakpoint-tablet) {
   .story-tags {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 0 1em;
     margin-top: 0.5em;
     margin-bottom: 5em;
@@ -102,7 +103,7 @@ $breakpoint-tablet: 768px;
   border: 1px solid white;
   width: auto;
   padding: 0.05em 0.5em;
-  margin: 0.15em;
+  margin: 0.2em;
   text-transform: uppercase;
   font-weight: 500;
   white-space: nowrap;
