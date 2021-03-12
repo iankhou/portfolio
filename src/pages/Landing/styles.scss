@@ -3,7 +3,7 @@ html {
   color: white;
 }
 
-$breakpoint-tablet: 768px;
+$breakpoint-tablet: 1100px;
 @media (min-width: $breakpoint-tablet) {
   .content {
     display: flex;
