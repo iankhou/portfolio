@@ -115,7 +115,7 @@ const Work = () => (
 const Resume = () => (
   <div className="resume-box">
     <div className="resume-link">
-      <a href="Resume 20201119.pdf">PDF</a>
+      <a href="Resume 20210302.pdf">PDF</a>
     </div>
     <div className="resume">
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
