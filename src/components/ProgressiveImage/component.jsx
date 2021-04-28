@@ -1,21 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-const omit = (obj, omitKey) => Object.keys(obj).reduce((result, key) => {
-  if (key !== omitKey) {
-    // eslint-disable-next-line no-param-reassign
-    result[key] = obj[key];
-  }
-  return result;
-}, {});
-
-const overlayStyles = {
-  position: 'absolute',
-  filter: 'blur(1px)',
-  transition: 'opacity ease-in 1000ms',
-  clipPath: 'inset(0)',
-};
+import './styles.scss';
 
 export default class ProgressiveImage extends Component {
   constructor(props) {
@@ -24,15 +10,12 @@ export default class ProgressiveImage extends Component {
   }
 
   render() {
-    const {
-      className, overlaySrc, src, alt,
-    } = this.props;
+    const { overlaySrc, src, alt } = this.props;
     const { highResImageLoaded } = this.state;
-    const filteredProps = omit(this.props, 'overlaySrc');
     return (
-      <span>
+      <>
         <img
-          {...filteredProps}
+          {...this.props}
           onLoad={() => {
             this.setState({ highResImageLoaded: true });
           }}
@@ -43,13 +26,13 @@ export default class ProgressiveImage extends Component {
           alt={alt}
         />
         <img
-          {...filteredProps}
-          className={`${className} ${overlayStyles}`}
+          {...this.props}
+          className="overlay"
           {...highResImageLoaded && { style: { opacity: '0' } }}
           src={overlaySrc}
           alt={alt}
         />
-      </span>
+      </>
     );
   }
 }
