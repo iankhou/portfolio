@@ -7,9 +7,10 @@
 import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
+import Loading from '../Loading';
+import { entries } from './data.json';
 import '../common.scss';
 import './styles.scss';
-import Loading from '../Loading';
 
 export default () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -54,7 +55,7 @@ export default () => {
 };
 
 const ProfessionalEntry = ({
-  side, image, tags, text, alt,
+  index, image, tags, text, alt,
 }) => {
   const Img = () => (
     <div className="main-story-image professional-image">
@@ -76,7 +77,7 @@ const ProfessionalEntry = ({
   );
 
   return (
-    <div className={`work-box wb-${side}`}>
+    <div className={`work-box wb-${index % 2 ? 'right' : 'left'}`}>
       <Img />
       <Txt />
     </div>
@@ -84,7 +85,7 @@ const ProfessionalEntry = ({
 };
 
 ProfessionalEntry.propTypes = {
-  side: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
   text: PropTypes.string.isRequired,
@@ -93,34 +94,9 @@ ProfessionalEntry.propTypes = {
 
 const Work = () => (
   <>
-    <ProfessionalEntry
-      side="left"
-      image="images/mana.png"
-      tags={['ML', 'Docker', 'Python', 'Server', 'Linux', 'RPC', 'PostgreSQL', 'Git']}
-      text="Over the summer and fall of 2020 I had the pleasure of working for Mana, a San Francisco-based company working to help people to better spend their time in their mobile app. I was hired as a machine-learning engineer, and built a pipeline that improved predictions by over 15%. Working with this team has brought me mentorship beyond any other professional experience and encouraged me to further pursue applied machine learning."
-      alt="Mana"
-    />
-    <ProfessionalEntry
-      side="right"
-      image="images/dali-logo.png"
-      tags={['HTML', 'CSS', 'JS', 'React', 'React Native', 'Node.js', 'MongoDB', 'Git']}
-      text="The DALI Lab is a startup-like experiential learning program at Dartmouth College. Working at the Lab has been a transformative experience for me, as it&#39;s where I learned a large portion of my knowledge in application development. The range of projects I&#39;ve worked on there include an interactive site to educate communities about email phishing, a stock market simulator with AI-generated data, and a groundbreaking app to track and identify undiagnosed illnesses. Working there has given me opportunities to work on projects that have social impacts beyond the Lab."
-      alt="DALI"
-    />
-    <ProfessionalEntry
-      side="left"
-      image="images/dartmouth.png"
-      tags={['Python', 'Java', 'OOP', 'Encrytion', 'AI', 'ML', 'C', 'Bash', 'HTML', 'CSS', 'JS', 'Auth']}
-      text="My journey in computer science began my Freshman year at Dartmouth, when I first took CS1. Since then I&#39;ve tutored nine students in that class and been a teaching assistant in another foundational course and Full-Stack Web Development. Many concepts I apply in my work as a software engineer are informed and inspired by concepts learned in Dartmouth classes."
-      alt="Mana"
-    />
-    <ProfessionalEntry
-      side="right"
-      image="images/army.png"
-      tags={['Leadership', 'Duty', 'Service']}
-      text="Enlisting in the Army after high school was one of the most consequential decisions of my life. Between finding purpose in serving my local and national community and meeting soldiers from all walks of life, my experience in the Army has been eye-opening and deeply satisfying. I served as an intelligence analyst from 2017 to 2019. I am now a cadet in Dartmouth ROTC and will commission into the Army Reserve as an officer in 2022."
-      alt="DALI"
-    />
+    {entries.map((entry, index) => (
+      <ProfessionalEntry index={index} image={entry.image} tags={entry.tags} text={entry.text} alt={entry.alt} />
+    ))}
   </>
 );
 
