@@ -1,15 +1,23 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 import '../common.scss';
 import './styles.scss';
+import Loading from '../Loading';
 
 export default () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   const [content, setContent] = useState(true);
-  return (
+
+  const Personality = () => (
     <div>
       <div className="content">
         <Parallax
@@ -37,6 +45,11 @@ export default () => {
       </nav>
       {content ? <Gallery /> : <About />}
     </div>
+  );
+
+  return (
+    isLoading ? <Loading />
+      : <Personality />
   );
 };
 
