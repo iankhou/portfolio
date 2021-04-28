@@ -5,10 +5,11 @@
 import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
+import { entries } from './data.json';
 import Loading from '../Loading';
+import ProgressiveImage from '../../components/ProgressiveImage';
 import '../common.scss';
 import './styles.scss';
-import ProgressiveImage from '../../components/ProgressiveImage';
 
 export default () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -122,53 +123,20 @@ GalleryEntry.propTypes = {
 
 const Gallery = () => (
   <div className="gallery-box">
-    <GalleryEntry
-      dir="/images/nature"
-      smallDir="/images/nature_small"
-      topLeft="summer_hike.jpg"
-      bottomLeft="acadia_ray.jpg"
-      center="cape_cod.jpg"
-      topRight="hogs.jpg"
-      bottomRight="jack_bike.jpg"
-      caption="Although the pandemic turned my routines and plans upside-down, I still managed to find pleasure in traveling locally. Enjoy these scenes and images from the Great Northeast."
-      tags={['outdoors', 'nature', 'family', 'travel']}
-    />
+    {entries.map((entry) => (
+      <GalleryEntry
+        dir={entry.dir}
+        smallDir={entry.smallDir}
+        topLeft={entry.topLeft}
+        bottomLeft={entry.bottomLeft}
+        center={entry.center}
+        topRight={entry.topRight}
+        bottomRight={entry.bottomRight}
+        caption={entry.caption}
+        tags={entry.tags}
 
-    <GalleryEntry
-      dir="/images/army"
-      smallDir="/images/army_small"
-      topLeft="graduation.jpg"
-      bottomLeft="mre.jpg"
-      center="winter_bike.jpg"
-      topRight="formation.jpg"
-      bottomRight="army_ftx_me.jpg"
-      caption="I enlisted in the Army out of high school, having been bored by constant schooling for over 12 years. I went to basic training and advanced individual training over what would have been a normal school year. I&#39;m now a cadet in Army ROTC at Dartmouth."
-      tags={['military', 'leadership']}
-    />
-
-    <GalleryEntry
-      dir="/images/outdoors"
-      smallDir="/images/outdoors_small"
-      topLeft="trips_2018.jpg"
-      bottomLeft="ice_climbing.jpg"
-      center="trips_2019.jpg"
-      topRight="kayak_nour.jpg"
-      bottomRight="sport_climb.jpg"
-      caption="My experience in the Dartmouth Outing Club began with attending First-Year Trips in 2018. Since then, I&#39;ve gone on many more trips with friends and strangers, and become a trip leader myself, as well as a leader in People of Color Outdoors, Ledyard Canoe Club, and Bait and Bullet."
-      tags={['outdoors', 'leadership', 'trips']}
-    />
-
-    <GalleryEntry
-      dir="/images/food"
-      smallDir="/images/food_small"
-      topLeft="cookies.jpg"
-      bottomLeft="jamaican.jpg"
-      center="cider_carboys.jpg"
-      topRight="oven_wings.jpg"
-      bottomRight="hotpot_table.jpg"
-      caption="I once started experimenting with apple cider fermentation with my roommate at Dartmouth. Two years later my projects are still going strong. Having made over 20 gallons of the stuff, it only gets better with experience. I&#39;ve since expanded to kombucha and mead. The other images reflect my increased appreciation for food once the pandemic hit (cooking, baking, and takeout!)."
-      tags={['project', 'food', 'campus life']}
-    />
+      />
+    ))}
   </div>
 );
 
