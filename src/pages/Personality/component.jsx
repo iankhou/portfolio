@@ -31,7 +31,7 @@ export default () => {
           <img src="/images/tiger_left.png" alt="white tiger" className="tigers tiger-left fade-in" />
         </Parallax>
 
-        <div className="main-text">PERSONALITY</div>
+        <div className="main-text">PERSONAL</div>
         <Parallax
           className="parallax-image"
           x={['350px', '-300px']}
