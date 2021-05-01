@@ -17,7 +17,7 @@ export default () => (
           <Link to="/professional" className="nav_link_text">Professional</Link>
         </li>
         <li className="nav_item">
-          <Link to="/personality" className="nav_link_text">Personality</Link>
+          <Link to="/personality" className="nav_link_text">Personal</Link>
         </li>
       </ul>
     </nav>
