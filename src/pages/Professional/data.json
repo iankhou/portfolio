@@ -9,13 +9,13 @@
         {
             "image": "images/dali-logo.png",
             "tags": ["HTML", "CSS", "JS", "React", "React Native", "Node.js", "MongoDB", "Git"],
-            "text": "The DALI Lab is a startup-like experiential learning program at Dartmouth College. Working at the Lab has been a transformative experience for me, as it&#39;s where I learned a large portion of my knowledge in application development. The range of projects I&#39;ve worked on there include an interactive site to educate communities about email phishing, a stock market simulator with AI-generated data, and a groundbreaking app to track and identify undiagnosed illnesses. Working there has given me opportunities to work on projects that have social impacts beyond the Lab.",
+            "text": "The DALI Lab is a startup-like experiential learning program at Dartmouth College. Working at the Lab has been a transformative experience for me, as it's where I learned a large portion of my knowledge in application development. The range of projects I've worked on there include an interactive site to educate communities about email phishing, a stock market simulator with AI-generated data, and a groundbreaking app to track and identify undiagnosed illnesses. Working there has given me opportunities to work on projects that have social impacts beyond the Lab.",
             "alt": "DALI"
         },
         {
             "image": "images/dartmouth.png",
             "tags": ["Python", "Java", "OOP", "Encrytion", "AI", "ML", "C", "Bash", "HTML", "CSS", "JS", "Auth"],
-            "text": "My journey in computer science began my Freshman year at Dartmouth, when I first took CS1. Since then I&#39;ve tutored nine students in that class and been a teaching assistant in another foundational course and Full-Stack Web Development. Many concepts I apply in my work as a software engineer are informed and inspired by concepts learned in Dartmouth classes.",
+            "text": "My journey in computer science began my Freshman year at Dartmouth, when I first took CS1. Since then I've tutored nine students in that class and been a teaching assistant in another foundational course and Full-Stack Web Development. Many concepts I apply in my work as a software engineer are informed and inspired by concepts learned in Dartmouth classes.",
             "alt": "Dartmouth"
         },
         {
