@@ -102,7 +102,7 @@ const Work = () => (
 
 const Resume = () => (
   <div className="resume-box">
-    <div className="profile-text">
+    <div className="professional-text">
       <p className="">
         Please contact me by
         {' '}
