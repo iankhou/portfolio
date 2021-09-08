@@ -25,17 +25,16 @@ export default () => {
 
           <div className="content-box">
             <div className="profile-image">
-              <img src="/images/profile.jpg" alt="profile" />
+              <img src="/images/profile1.jpg" alt="profile" />
             </div>
 
             <div className="profile-text">
               <h1>Hello World.</h1>
               <p>
-                I&apos;m Ian, a junior at Dartmouth College studying computer science and Chinese.
+                I&apos;m Ian, a senior at Dartmouth College studying computer science and Chinese.
                 I currently work part-time as a software engineer at Mana, a startup based in San
-                Francisco, and as a software developer in the DALI Lab, a startup-like
-                experiential learning lab. I am a cadet in Dartmouth ROTC. Learn more about my
-                career here:
+                Francisco. At school, I am an SMP cadet in Dartmouth ROTC, serving with the 424th
+                EN CO. Learn more about my career here:
               </p>
               <Link to="/professional" className="nav-link-button">Professional</Link>
               <p>

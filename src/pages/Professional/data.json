@@ -3,7 +3,7 @@
         {
             "image": "images/mana.png",
             "tags": ["ML", "Docker", "Python", "Server", "Linux", "RPC", "PostgreSQL", "Git"],
-            "text": "Over the summer and fall of 2020 I had the pleasure of working for Mana, a San Francisco-based company working to help people to better spend their time in their mobile app. I was hired as a machine-learning engineer, and built a pipeline that improved predictions by over 15%. Working with this team has brought me mentorship beyond any other professional experience and encouraged me to further pursue applied machine learning.",
+            "text": "From the summer 2020 to fall 2021 I had the pleasure of working for Mana, a San Francisco-based company working to help people to better spend their time in their mobile app. I was hired as a machine-learning engineer, and built a pipeline that improved predictions by over 15%. Adding integration and calendar data has only made the pipeline more accurate, and I am currently working toward automatic predictions for our users 24/7. Working with this team has brought me mentorship beyond any other professional experience and encouraged me to further pursue applied machine learning and software engineering.",
             "alt": "Mana"
         },
         {

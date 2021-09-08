@@ -70,6 +70,7 @@ $breakpoint-tablet: 1100px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .resume-link {
@@ -82,4 +83,27 @@ $breakpoint-tablet: 1100px;
     border: 0.1em solid white;
     padding: 0.3em;
   }
+}
+
+.nav-link-button {
+  border: 0.1em solid white;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.3em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.profile-text {
+  p {
+    font-size: 3em;
+    text-align: center;
+    width: 15em;
+    margin: 0.8em 0;
+  }
+  width: 100%;
+  margin: 0 1em;
+  display: flex;
+  justify-content: center;
 }
