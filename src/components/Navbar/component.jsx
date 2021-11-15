@@ -26,6 +26,7 @@ export default () => (
     <Switch>
       <Route path="/professional" component={Professional} />
       <Route path="/personality" component={Personality} />
+      <Route path="/*" component={Landing} />
       <Route component={Landing} />
     </Switch>
   </div>
