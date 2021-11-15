@@ -58,7 +58,7 @@ const ProfessionalEntry = ({
   index, image, tags, title, text, alt,
 }) => {
   const Img = () => (
-    <div className="main-story-image professional-image">
+    <div className="professional-image">
       <div>
         <img src={image} alt={alt} />
       </div>

@@ -7,7 +7,6 @@ import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 import { entries } from './data.json';
 import Loading from '../Loading';
-import ProgressiveImage from '../../components/ProgressiveImage';
 import '../common.scss';
 import './styles.scss';
 
@@ -18,7 +17,8 @@ export default () => {
     setIsLoading(false);
   }, []);
 
-  const [content, setContent] = useState(true);
+  // const [content, setContent] = useState(true);
+  const content = true;
 
   const Personality = () => (
     <div>
@@ -42,10 +42,10 @@ export default () => {
 
       </div>
 
-      <nav className="switcher">
+      {/* <nav className="switcher">
         <h2 className={`button ${content ? 'buttonOn' : ''}`} onClick={() => setContent(true)}>Gallery</h2>
         <h2 className={`button ${content ? '' : 'buttonOn'}`} onClick={() => setContent(false)}>About</h2>
-      </nav>
+      </nav> */}
       {content ? <Gallery /> : <About />}
     </div>
   );
@@ -63,23 +63,23 @@ const GalleryEntry = ({
   <div className="story-group">
     <div className="two-stack">
       <div>
-        <ProgressiveImage
-          overlaySrc={`${smallDir}/${topLeft}`}
+        <img
           src={`${dir}/${topLeft}`}
+          alt=""
         />
       </div>
       <div>
-        <ProgressiveImage
-          overlaySrc={`${smallDir}/${bottomLeft}`}
+        <img
           src={`${dir}/${bottomLeft}`}
+          alt=""
         />
       </div>
 
     </div>
     <div className="main-story-image">
-      <ProgressiveImage
-        overlaySrc={`${smallDir}/${center}`}
+      <img
         src={`${dir}/${center}`}
+        alt=""
       />
       <div className="overlay">
         <div className="overlay-text">{caption}</div>
@@ -94,15 +94,15 @@ const GalleryEntry = ({
 
     <div className="two-stack">
       <div>
-        <ProgressiveImage
-          overlaySrc={`${smallDir}/${topRight}`}
+        <img
           src={`${dir}/${topRight}`}
+          alt=""
         />
       </div>
       <div>
-        <ProgressiveImage
-          overlaySrc={`${smallDir}/${bottomRight}`}
+        <img
           src={`${dir}/${bottomRight}`}
+          alt=""
         />
       </div>
     </div>
