@@ -12,9 +12,13 @@ $breakpoint-tablet: 1100px;
     margin-left: 2em;
     margin-right: 2em;
   }
+  .content:last-child {
+    margin-bottom: 3em;
+  }
   .content-box {
     display: flex;
     flex-direction: row;
+    margin: 2em;
   }
   .quote {
     display: flex;
@@ -39,7 +43,18 @@ $breakpoint-tablet: 1100px;
       margin: 0.8em 0;
     }
     width: 40%;
-    margin: 0 1em;
+    margin: 0 0 0 1em;
+    background: #27221f;
+    border-radius: 1em;
+    padding: 1em;
+  }
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgb(20, 20, 20);
+    border-radius: 1em;
+    // box-shadow: 10px 5px 5px white;
   }
 }
 
@@ -55,18 +70,13 @@ $breakpoint-tablet: 1100px;
   .content-box {
     display: flex;
     flex-direction: column;
-    margin-top: 100%;
+    margin-top: 50%;
   }
   .quote {
-    display: flex;
-    align-items: center;
-    font-size: 2em;
-    font-weight: 300;
-    max-width: 9em;
-    font-family: "adam.cg_proregular";
+    display: none;
   }
   .xueImage {
-    height: 30em;
+    height: 60em;
   }
   .profile-text {
     h1 {
@@ -75,27 +85,32 @@ $breakpoint-tablet: 1100px;
     }
     p {
       font-size: 1.5em;
-      text-align: left;
-      width: 15em;
-      margin: 0.8em 0;
+      text-align: justify;
+      width: 22em;
+      // margin: 0.8em 0;
     }
     width: 100%;
-    margin: 0 1em;
-  }
-}
+    margin-top: 2em;
+    margin-bottom: 10em;
 
-.intro {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  }
+  .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // background: rgb(20, 20, 20);
+    border-radius: 1em;
+  }
 }
 
 .profile-image {
   img {
     width: 100%;
+    border-radius: 1em;
+    // box-shadow: 10px 5px 5px white;
   }
   width: 34em;
-  margin: 0 1em;
+  // margin: 0 1em;
 }
 
 .nav-link-button {
