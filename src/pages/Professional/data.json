@@ -1,26 +1,95 @@
 {
     "entries": [
         {
+            "image": "images/requipper.png",
+            "tags": [
+                "Contract",
+                "Infrastructure",
+                "GCP",
+                "Python",
+                "Selenium",
+                "Linux",
+                "RPC",
+                "Git"
+            ],
+            "title": "Requipper",
+            "text": "CEO Alex Friedman had a problem. He was spending way too much of his time managing shopping listings between Requipper's internal inventory and other third-party sellers. My first task was to solve this problem by any means possible. I started off automating listing updates from those third party sellers, using Selenium scripts running on a Google Cloud server. Beyond that, I helped to expand our market presence by reating automatic listing uploads to Google Merchant Center, where we could advertise our products. Working for Alex made me constantly think on my feet for innovative and unconventional solutions.",
+            "alt": "Requipper"
+        },
+        {
             "image": "images/mana.png",
-            "tags": ["ML", "Docker", "Python", "Server", "Linux", "RPC", "PostgreSQL", "Git"],
+            "tags": [
+                "Part-time",
+                "ML",
+                "Docker",
+                "Python",
+                "Server",
+                "Linux",
+                "RPC",
+                "PostgreSQL",
+                "Git"
+            ],
+            "title": "Mana.Ai",
             "text": "From the summer 2020 to fall 2021 I had the pleasure of working for Mana, a San Francisco-based company working to help people to better spend their time in their mobile app. I was hired as a machine-learning engineer, and built a pipeline that improved predictions by over 15%. Adding integration and calendar data has only made the pipeline more accurate, and I am currently working toward automatic predictions for our users 24/7. Working with this team has brought me mentorship beyond any other professional experience and encouraged me to further pursue applied machine learning and software engineering.",
             "alt": "Mana"
         },
         {
+            "image": "images/whiteboard.png",
+            "tags": [
+                "Contract",
+                "React Native",
+                "Google Firebase",
+                "Git"
+            ],
+            "title": "Whiteboard",
+            "text": "After deploying an MVP of Whiteboard Mobile to Testflight within a 10-week DALI Lab sprint, the founders of Whiteboard reached out to me and asked me to continue refining the app. I worked on performance improvements, bug fixes, and additional functionality past the MVP, creating an app that was presentable to investors.",
+            "alt": "Whiteboard"
+        },
+        {
             "image": "images/dali-logo.png",
-            "tags": ["HTML", "CSS", "JS", "React", "React Native", "Node.js", "MongoDB", "Git"],
+            "tags": [
+                "Part-time",
+                "HTML",
+                "CSS",
+                "JS",
+                "React",
+                "React Native",
+                "Node.js",
+                "MongoDB",
+                "Git"
+            ],
+            "title": "The DALI Lab",
             "text": "The DALI Lab is a startup-like experiential learning program at Dartmouth College. Working at the Lab has been a transformative experience for me, as it's where I learned a large portion of my knowledge in application development. The range of projects I've worked on there include an interactive site to educate communities about email phishing, a stock market simulator with AI-generated data, and a groundbreaking app to track and identify undiagnosed illnesses. Working there has given me opportunities to work on projects that have social impacts beyond the Lab.",
             "alt": "DALI"
         },
         {
             "image": "images/dartmouth.png",
-            "tags": ["Python", "Java", "OOP", "Encrytion", "AI", "ML", "C", "Bash", "HTML", "CSS", "JS", "Auth"],
+            "tags": [
+                "Python",
+                "Java",
+                "OOP",
+                "Encrytion",
+                "AI",
+                "ML",
+                "C",
+                "Bash",
+                "HTML",
+                "CSS",
+                "JS",
+                "Auth"
+            ],
+            "title": "Dartmouth CS",
             "text": "My journey in computer science began my Freshman year at Dartmouth, when I first took CS1. Since then I've tutored nine students in that class and been a teaching assistant in another foundational course and Full-Stack Web Development. Many concepts I apply in my work as a software engineer are informed and inspired by concepts learned in Dartmouth classes.",
             "alt": "Dartmouth"
         },
         {
             "image": "images/army.png",
-            "tags": ["Leadership", "Duty", "Service"],
+            "tags": [
+                "Leadership",
+                "Duty",
+                "Service"
+            ],
+            "title": "US Army",
             "text": "Enlisting in the Army after high school was one of the most consequential decisions of my life. Between finding purpose in serving my local and national community and meeting soldiers from all walks of life, my experience in the Army has been eye-opening and deeply satisfying. I served as an intelligence analyst from 2017 to 2019. I am now a cadet in Dartmouth ROTC and will commission into the Army Reserve as an officer in 2022.",
             "alt": "Army"
         }

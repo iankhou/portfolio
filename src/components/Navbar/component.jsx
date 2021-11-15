@@ -8,7 +8,9 @@ import './styles.scss';
 export default () => (
   <div>
     <nav className="navbar">
-      <h1 className="name">Ian Hou</h1>
+      <h1>
+        <Link to="/" className="name">Ian Hou</Link>
+      </h1>
       <ul className="nav_ul">
         <li className="nav_item">
           <Link to="/" className="nav_link_text">Home</Link>

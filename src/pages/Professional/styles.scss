@@ -16,9 +16,12 @@ $breakpoint-tablet: 1100px;
     margin-bottom: 50%;
   }
   .story-text {
+    background: rgb(20, 20, 20);
     min-width: 20em;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: justify;
+    border-radius: 1em;
+    padding: 1em;
   }
 }
 
@@ -38,9 +41,12 @@ $breakpoint-tablet: 1100px;
     margin: 8em 10em;
   }
   .story-text {
-    min-width: 20em;
+    background: rgb(20, 20, 20);
+    min-width: 19em;
     max-width: 30em;
     font-size: 1.5em;
+    padding: 1em;
+    border-radius: 1em;
   }
 }
 
