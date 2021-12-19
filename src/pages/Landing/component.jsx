@@ -32,15 +32,17 @@ export default () => {
               <h1>Hello World.</h1>
               <p>
                 I&apos;m Ian, a senior at Dartmouth College studying computer science and Chinese.
-                I currently work part-time as a software engineer at Mana, a startup based in San
-                Francisco. At school, I am an SMP cadet in Dartmouth ROTC, serving with the 424th
-                EN CO. Learn more about my career here:
+                I currently work part-time as a software engineer at Requipper, a startup that
+                helps outdoorsy people buy and sell used gear. At school, I am an SMP cadet in
+                Dartmouth ROTC, serving with the 424th EN CO. Learn more about my career here:
               </p>
               <Link to="/professional" className="nav-link-button">Professional</Link>
               <p>
-                I love food, exercise, and the outdoors. At Dartmouth, I play lead trumpet in the
-                DSO and lead in the DOC in People of Color Outdoors, Ledyard Canoe Club, and Bait
-                and Bullet. You can often find me cooking hotpot in a common room on campus.
+                I love food, exercise, and the outdoors. At Dartmouth, I lead organizations within
+                the Dartmouth Outdoors Club such as People of Color Outdoors and Bait and Bullet.
+                In the Ledyard Canoe Club, I am a flatwater trip leader and lead canoe trips
+                anywhere from down the Connecticut River to Everglades National Park!
+                You can often find me cooking hotpot in a common room on campus.
                 Learn more about my personal life here:
               </p>
               <Link to="/personality" className="nav-link-button">Personal</Link>
