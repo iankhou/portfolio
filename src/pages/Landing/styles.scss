@@ -1,5 +1,5 @@
 html {
-  background-color: #27221f;
+  background-color: black;
   color: white;
 }
 
@@ -52,7 +52,7 @@ $breakpoint-tablet: 1100px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: rgb(20, 20, 20);
+    background: black;
     border-radius: 1em;
     // box-shadow: 10px 5px 5px white;
   }
@@ -87,7 +87,6 @@ $breakpoint-tablet: 1100px;
       font-size: 1.5em;
       text-align: justify;
       width: 22em;
-      // margin: 0.8em 0;
     }
     width: 100%;
     margin-top: 2em;
@@ -98,7 +97,6 @@ $breakpoint-tablet: 1100px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    // background: rgb(20, 20, 20);
     border-radius: 1em;
   }
 }

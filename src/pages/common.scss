@@ -21,6 +21,7 @@ $breakpoint-tablet: 1100px;
     padding: 0 1em;
     margin-top: 0.5em;
     min-width: 18em;
+    justify-content: center;
   }
 }
 
@@ -39,7 +40,7 @@ $breakpoint-tablet: 1100px;
 }
 
 .button:hover {
-  color: black;
+  color: #27221f;
   cursor: pointer;
   transition: 0.3s;
 }
