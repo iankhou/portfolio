@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   Link,
@@ -11,7 +10,7 @@ import Personality from '../../pages/Personality';
 import './styles.scss';
 
 export default () => (
-  <Router>
+  <>
     <nav className="navbar">
       <h1>
         <Link to="/" className="name">Ian Hou</Link>
@@ -35,5 +34,5 @@ export default () => (
       <Route path="*" component={Landing} />
       <Route component={Landing} />
     </Switch>
-  </Router>
+  </>
 );
