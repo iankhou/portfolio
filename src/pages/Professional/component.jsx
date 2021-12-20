@@ -9,7 +9,7 @@ import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 import Loading from '../Loading';
 import ScrollAnimation from 'react-animate-on-scroll';
-import * as dataFile from './data.json';
+import dataFile from './data.json';
 import '../common.scss';
 import './styles.scss';
 

@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import Loading from '../Loading';
 import ScrollAnimation from 'react-animate-on-scroll';
-import * as dataFile from './data.json';
+import dataFile from './data.json';
 import './styles.scss';
 
 

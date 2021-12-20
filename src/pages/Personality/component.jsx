@@ -5,7 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
-import * as dataFile from './data.json';
+import dataFile from './data.json';
 import Loading from '../Loading';
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../common.scss';
