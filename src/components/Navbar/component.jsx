@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Switch,
+  Routes,
   Route,
   Link,
 } from 'react-router-dom';
@@ -9,7 +9,7 @@ import Professional from '../../pages/Professional';
 import Personality from '../../pages/Personality';
 import './styles.scss';
 
-export default () => (
+const NavBar = () => (
   <>
     <nav className="navbar">
       <h1>
@@ -27,12 +27,14 @@ export default () => (
         </li>
       </ul>
     </nav>
-    <Switch>
-      <Route path="/" exact component={Landing} />
-      <Route path="/professional" component={Professional} />
-      <Route path="/personality" component={Personality} />
-      <Route path="*" component={Landing} />
-      <Route component={Landing} />
-    </Switch>
+    <Routes>
+      <Route path="/" exact element={<Landing />} />
+      <Route path="/professional" element={<Professional />} />
+      <Route path="/personality" element={<Personality />} />
+      <Route path="*" element={<Landing />} />
+      <Route element={<Landing />} />
+    </Routes>
   </>
 );
+
+export default NavBar

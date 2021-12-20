@@ -3,17 +3,21 @@ import {
   Link,
 } from 'react-router-dom';
 import Loading from '../Loading';
-import { data } from './data.json';
+import ScrollAnimation from 'react-animate-on-scroll';
+import * as dataFile from './data.json';
 import './styles.scss';
 
-export default () => {
+
+const { data } = dataFile;
+
+const Landing = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setIsLoading(false);
   }, []);
 
-  const Landing = () => (
+  const LandingComponent = () => (
     <>
       <div className="content">
         <div className="quote">{data.quote}</div>
@@ -23,23 +27,26 @@ export default () => {
       </div>
       <div className="content">
         <div className="intro">
-
           <div className="content-box">
-            <div className="profile-image">
-              <img src="/images/profile1.jpg" alt="profile" />
-            </div>
+            <ScrollAnimation animateIn="fadeIn">
+              <div className="profile-image">
+                <img src="/images/profile1.jpg" alt="profile" />
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeIn">
+              <div className="profile-text">
+                <h1>{data.title}</h1>
+                <p>
+                  {data.career}
+                </p>
+                <Link to="/professional" className="nav-link-button">Professional</Link>
+                <p>
+                  {data.personal}
+                </p>
+                <Link to="/personality" className="nav-link-button">Personal</Link>
+              </div>
+            </ScrollAnimation>
 
-            <div className="profile-text">
-              <h1>{data.title}</h1>
-              <p>
-                {data.career}
-              </p>
-              <Link to="/professional" className="nav-link-button">Professional</Link>
-              <p>
-                {data.personal}
-              </p>
-              <Link to="/personality" className="nav-link-button">Personal</Link>
-            </div>
           </div>
         </div>
       </div>
@@ -48,6 +55,8 @@ export default () => {
 
   return (
     isLoading ? <Loading />
-      : <Landing />
+      : <LandingComponent />
   );
 };
+
+export default Landing;

@@ -3,18 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/dom": "7.21.4",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
-    "react-scroll-parallax": "^2.3.5",
-    "sass": "^1.32.8",
-    "web-vitals": "^0.2.4"
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^16.13.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "react-scroll-parallax": "^2.4.1",
+    "web-vitals": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,11 +39,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.13.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "sass": "^1.45.0"
   }
 }

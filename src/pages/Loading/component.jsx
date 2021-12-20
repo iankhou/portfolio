@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles.scss';
 
-export default () => (
+const Loading = () => (
   <div className="loader" />
 );
+
+export default Loading;

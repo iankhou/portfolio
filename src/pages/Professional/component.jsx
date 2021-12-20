@@ -8,11 +8,14 @@ import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import PropTypes from 'prop-types';
 import Loading from '../Loading';
-import { entries } from './data.json';
+import ScrollAnimation from 'react-animate-on-scroll';
+import * as dataFile from './data.json';
 import '../common.scss';
 import './styles.scss';
 
-export default () => {
+const { entries } = dataFile;
+
+const Professional = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -20,7 +23,7 @@ export default () => {
   }, []);
   const [content, setContent] = useState(true);
 
-  const Professional = () => (
+  const ProfessionalComponent = () => (
     <div>
       <div className="content">
         <Parallax
@@ -50,7 +53,7 @@ export default () => {
 
   return (
     isLoading ? <Loading />
-      : <Professional />
+      : <ProfessionalComponent />
   );
 };
 
@@ -78,10 +81,13 @@ const ProfessionalEntry = ({
   );
 
   return (
-    <div className={`work-box wb-${index % 2 ? 'right' : 'left'}`}>
-      <Img />
-      <Txt />
-    </div>
+    <ScrollAnimation animateIn="fadeIn" duration={0.5}>
+      <div className={`work-box wb-${index % 2 ? 'right' : 'left'}`}>
+        <Img />
+        <Txt />
+      </div>
+    </ScrollAnimation>
+
   );
 };
 
@@ -116,3 +122,5 @@ const Resume = () => (
 
   </div>
 );
+
+export default Professional;
