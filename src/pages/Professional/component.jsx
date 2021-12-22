@@ -58,7 +58,7 @@ const Professional = () => {
 };
 
 const ProfessionalEntry = ({
-  index, image, tags, title, text, alt,
+  index, image, tags, title, text, alt, link
 }) => {
   const Img = () => (
     <div className="professional-image">
@@ -75,7 +75,9 @@ const ProfessionalEntry = ({
 
   const Txt = () => (
     <div className="story-text">
-      <h2 style={{ margin: 0 }}>{title}</h2>
+      <span>
+        <h2 style={{ margin: 0, display: 'inline-block' }}>{title}</h2><a className="link-icon" href={link}><img src="/images/external.png" width="20" alt="" /></a>
+      </span>
       <p>{text}</p>
     </div>
   );
@@ -98,12 +100,13 @@ ProfessionalEntry.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
 };
 
 const Work = () => (
   <>
     {entries.map((entry, index) => (
-      <ProfessionalEntry index={index} image={entry.image} tags={entry.tags} title={entry.title} text={entry.text} alt={entry.alt} />
+      <ProfessionalEntry index={index} image={entry.image} tags={entry.tags} title={entry.title} text={entry.text} alt={entry.alt} link={entry.link} />
     ))}
   </>
 );

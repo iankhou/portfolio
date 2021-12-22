@@ -2,6 +2,7 @@
     "entries": [
         {
             "image": "images/requipper.png",
+            "link": "https://www.requipper.com/",
             "tags": [
                 "Contract",
                 "Infrastructure",
@@ -18,6 +19,7 @@
         },
         {
             "image": "images/mana.png",
+            "link": "https://mana.ai/",
             "tags": [
                 "Part-time",
                 "ML",
@@ -35,6 +37,7 @@
         },
         {
             "image": "images/whiteboard.png",
+            "link": "https://www.whiteboardbeta.com/",
             "tags": [
                 "Contract",
                 "React Native",
@@ -47,6 +50,7 @@
         },
         {
             "image": "images/dali-logo.png",
+            "link": "http://dali.dartmouth.edu/",
             "tags": [
                 "Part-time",
                 "HTML",
@@ -64,6 +68,7 @@
         },
         {
             "image": "images/dartmouth.png",
+            "link": "https://web.cs.dartmouth.edu/",
             "tags": [
                 "Python",
                 "Java",
@@ -84,6 +89,7 @@
         },
         {
             "image": "images/army.png",
+            "link": "https://www.army.mil/",
             "tags": [
                 "Leadership",
                 "Duty",

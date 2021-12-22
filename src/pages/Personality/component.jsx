@@ -10,6 +10,7 @@ import Loading from '../Loading';
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../common.scss';
 import './styles.scss';
+import './timeline.scss';
 
 const { entries } = dataFile;
 
@@ -45,6 +46,7 @@ const Personality = () => {
 
       </div>
       {content ? <Gallery /> : <About />}
+      {Timeline()}
     </div>
   );
 
@@ -140,6 +142,66 @@ const Gallery = () => (
     ))}
   </div>
 );
+
+const timelineData = [
+  {
+    text: "Hello",
+    date: "Dec 20 2021",
+    category: {
+      tag: "medium",
+      color: "#018f69"
+    },
+    link: {
+      url:
+        'https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2',
+      text: 'Read more'
+    }
+  },
+  {
+    text: "Hello",
+    date: "Dec 20 2021",
+    category: {
+      tag: "medium",
+      color: "#018f69"
+    },
+    link: {
+      url:
+        'https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2',
+      text: 'Read more'
+    }
+  }
+]
+
+const TimelineItem = ({ data }) => (
+  <div className="timeline-item">
+    <div className="timeline-item-content">
+      <span className="tag" style={{ background: data.category.color }}>
+        {data.category.tag}
+      </span>
+      <time>{data.date}</time>
+      <p>{data.text}</p>
+      {data.link && (
+        <a
+          href={data.link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {data.link.text}
+        </a>
+      )}
+      <span className="circle" />
+    </div>
+  </div>
+)
+
+const Timeline = () =>
+  timelineData.length > 0 && (
+    <div className="timeline-container">
+      {timelineData.map((data, idx) => (
+        <TimelineItem data={data} key={idx} />
+      ))}
+    </div>
+  );
 
 const About = () => (
   <div>
