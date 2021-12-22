@@ -46,7 +46,7 @@ const Personality = () => {
 
       </div>
       {content ? <Gallery /> : <About />}
-      {Timeline()}
+      {/* {Timeline()} */}
     </div>
   );
 
