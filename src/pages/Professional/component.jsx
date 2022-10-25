@@ -38,8 +38,10 @@ const Professional = () => {
           className="parallax-image"
           x={['-300px', '300px']}
         >
-          <img src="/images/mbp.png" alt="Macbook Pro" className="tigers tiger-right fade-in" />
-          <img src="/images/terminal.png" alt="Macbook Pro" className="tigers tiger-right fade-in" />
+          <div className="vert-image-stack">
+            <img src="/images/mbp.png" alt="Macbook Pro" className="tigers tiger-right fade-in" />
+            <img src="/images/terminal.png" alt="Macbook Pro" className="tigers tiger-right fade-in" />
+          </div>
         </Parallax>
 
       </div>
@@ -117,7 +119,7 @@ const Resume = () => (
       <p>
         Please contact me by
         {' '}
-        <a className="nav-link-button" href="mailto:iankwanhou@gmail.com">email</a>
+        <a className="email-link" href="mailto:iankwanhou@gmail.com">email</a>
         {' '}
         for my resume.
       </p>

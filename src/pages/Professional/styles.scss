@@ -112,14 +112,17 @@ $breakpoint-tablet: 1100px;
 .nav-link-button:hover {
   border: 0.3em solid white;
   transition-duration: 0.5s;
-  
+}
+
+.email-link {
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .professional-text {
   p {
-    a {
-      font-size: 0.8em;
-    }
     font-size: 3em;
     text-align: center;
     width: 15em;
@@ -134,5 +137,9 @@ $breakpoint-tablet: 1100px;
 .link-icon {
   cursor: pointer;
   padding: 0.25em;
+}
 
+.vert-image-stack {
+  display: flex;
+  flex-direction: column;
 }

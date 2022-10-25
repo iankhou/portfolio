@@ -1,6 +1,22 @@
 {
     "entries": [
         {
+            "image": "images/amazon_ads.png",
+            "link": "https://advertising.amazon.com/",
+            "tags": [
+                "Full-time",
+                "Infrastructure",
+                "AWS",
+                "Javascript",
+                "Java",
+                "Testing",
+                "Git"
+            ],
+            "title": "Amazon Ads",
+            "text": "At Amazon Ads, I work for an internal team that builds tools for advertising products at Amazon. These tools enable our teams to better analyze the health of their applications and diagnose problems that arise in production. They also streamline the process by which we deploy code and deliver solutions to our customers.",
+            "alt": "Amazon Ads"
+        },
+        {
             "image": "images/requipper.png",
             "link": "https://www.requipper.com/",
             "tags": [
@@ -14,7 +30,7 @@
                 "Git"
             ],
             "title": "Requipper",
-            "text": "CEO Alex Friedman had a problem. He was spending way too much of his time managing shopping listings between Requipper's internal inventory and other third-party sellers. My first task was to solve this problem by any means possible. I started off automating listing updates from those third party sellers, using Selenium scripts running on a Google Cloud server. Beyond that, I helped to expand our market presence by reating automatic listing uploads to Google Merchant Center, where we could advertise our products. Working for Alex makes me constantly think on my feet for innovative and unconventional solutions.",
+            "text": "CEO Alex Friedman had a problem. He was spending way too much of his time managing shopping listings between Requipper's internal inventory and other third-party sellers. My first task was to solve this problem by any means possible. I started off automating listing updates from those third party sellers, using Selenium scripts running on a Google Cloud server. Beyond that, I helped to increase brand awareness by creating automatic listing uploads to Google Merchant Center, where we could advertise our products. Working for Alex made me constantly think on my feet for innovative and unconventional solutions.",
             "alt": "Requipper"
         },
         {
