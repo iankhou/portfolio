@@ -85,7 +85,7 @@ const ProfessionalEntry = ({
   );
 
   return (
-    <ScrollAnimation animateIn="fadeIn" duration={0.5}>
+    <ScrollAnimation className="animated-container" animateIn="fadeIn" duration={0.5}>
       <div className={`work-box wb-${index % 2 ? 'right' : 'left'}`}>
         <Img />
         <Txt />
