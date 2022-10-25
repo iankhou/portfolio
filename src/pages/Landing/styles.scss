@@ -44,7 +44,7 @@ $breakpoint-tablet: 1100px;
     }
     // width: 40%;
     margin: 0 0 0 1em;
-    background: #27221f;
+    background: #27221fb7;
     border-radius: 1em;
     padding: 1em;
   }
@@ -54,7 +54,7 @@ $breakpoint-tablet: 1100px;
     align-items: center;
     background: black;
     border-radius: 1em;
-    // box-shadow: 10px 5px 5px white;
+    background-color: rgba(0, 0, 0, 0)
   }
 }
 
@@ -98,6 +98,7 @@ $breakpoint-tablet: 1100px;
     flex-direction: row;
     align-items: center;
     border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0)
   }
 }
 
@@ -107,4 +108,12 @@ $breakpoint-tablet: 1100px;
     border-radius: 1em;
   }
   width: 27em;
+}
+
+#nycVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }

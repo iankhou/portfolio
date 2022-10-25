@@ -19,6 +19,9 @@ const Landing = () => {
 
   const LandingComponent = () => (
     <>
+    <video autoPlay muted loop id="nycVideo">
+      <source src="videos/nyc.mp4" type="video/mp4" />
+    </video>
       <div className="content">
         <div className="quote">{data.quote}</div>
         <div>
