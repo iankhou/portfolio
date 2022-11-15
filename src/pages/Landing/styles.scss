@@ -42,19 +42,10 @@ $breakpoint-tablet: 1100px;
       width: 15em;
       margin: 0.8em 0;
     }
-    // width: 40%;
     margin: 0 0 0 1em;
     background: #27221fb7;
-    border-radius: 1em;
+    border-radius: 0.5em;
     padding: 1em;
-  }
-  .intro {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: black;
-    border-radius: 1em;
-    background-color: rgba(0, 0, 0, 0)
   }
 }
 
@@ -72,6 +63,10 @@ $breakpoint-tablet: 1100px;
     flex-direction: column;
     margin-top: 50%;
   }
+  .centered-image {
+    display: flex;
+    justify-content: center;
+  }
   .quote {
     display: none;
   }
@@ -85,27 +80,20 @@ $breakpoint-tablet: 1100px;
     }
     p {
       font-size: 1.5em;
-      text-align: justify;
-      width: 22em;
+      text-align: left;
+      width: 17em;
     }
     width: 100%;
     margin-top: 2em;
     margin-bottom: 10em;
 
   }
-  .intro {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 1em;
-    background-color: rgba(0, 0, 0, 0)
-  }
 }
 
 .profile-image {
   img {
     width: 100%;
-    border-radius: 1em;
+    border-radius: 0.5em;
   }
   width: 27em;
 }

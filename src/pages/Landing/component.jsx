@@ -29,13 +29,15 @@ const Landing = () => {
         </div>
       </div>
       <div className="content">
-        <div className="intro">
           <div className="content-box">
-            <ScrollAnimation animateIn="fadeIn">
+            <div className="centered-image">
+              <ScrollAnimation animateIn="fadeIn">
               <div className="profile-image">
                 <img src="/images/profile1.jpg" alt="profile" />
               </div>
             </ScrollAnimation>
+            </div>
+            
             <ScrollAnimation animateIn="fadeIn">
               <div className="profile-text">
                 <h1>{data.title}</h1>
@@ -51,7 +53,6 @@ const Landing = () => {
             </ScrollAnimation>
 
           </div>
-        </div>
       </div>
     </>
   );
