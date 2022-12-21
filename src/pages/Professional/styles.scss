@@ -30,7 +30,7 @@ $breakpoint-tablet: 1100px;
     display: flex;
     justify-content: center;
   }
-  
+
   .wb-left {
     flex-direction: row;
   }
@@ -47,7 +47,7 @@ $breakpoint-tablet: 1100px;
     width: 100%;
     max-width: 150em;
   }
-  
+
   .story-text {
     background: rgb(20, 20, 20);
     min-width: 19em;
@@ -70,7 +70,8 @@ $breakpoint-tablet: 1100px;
 
 .professional-image {
   display: flex;
-  flex-direction: column;  position: relative;
+  flex-direction: column;
+  position: relative;
   height: 100%;
   width: 30em;
   margin: 0 3em;
@@ -115,6 +116,7 @@ $breakpoint-tablet: 1100px;
   padding: 0.3em;
   font-size: 1.2em;
   text-transform: uppercase;
+  margin: 0.5em;
 }
 
 .nav-link-button:hover {
