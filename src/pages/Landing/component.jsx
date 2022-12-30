@@ -23,7 +23,7 @@ const Landing = () => {
 
     return (
       <>
-        <video autoPlay muted loop id="nycVideo">
+        <video autoPlay muted playsinline loop id="nycVideo">
           <source src="videos/nyc.mp4" type="video/mp4" />
         </video>
         <div ref={contentRef} className="content">
