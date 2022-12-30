@@ -1,12 +1,11 @@
 $breakpoint-tablet: 1100px;
 @media (max-width: $breakpoint-tablet) {
   .main-text {
-    font-size: 4em;
+    font-size: 2em;
   }
   .story-group {
     display: flex;
     flex-direction: column;
-    // margin: 6em;
   }
   .story-group:last-child {
     margin-bottom: 5em;
@@ -15,16 +14,15 @@ $breakpoint-tablet: 1100px;
   .two-stack {
     display: flex;
     flex-direction: column;
-    // margin: 0.5em 0;
   }
   .two-stack img {
-    width: 30em;
+    width: 70vw;
     margin-bottom: 1em;
   }
   .main-story-image {
     display: flex;
     flex-direction: column;
-    width: 30em;
+    width: 70vw;
     position: relative;
     margin-bottom: 1em;
   }
@@ -69,7 +67,7 @@ $breakpoint-tablet: 1100px;
     height: 32em;
     margin: 0 2em;
   }
-  
+
   .main-story-image img {
     display: block;
     width: 100%;
@@ -80,7 +78,7 @@ $breakpoint-tablet: 1100px;
     opacity: 0.9;
     transition: 0.5s;
   }
-  
+
   .overlay {
     display: flex;
     align-items: center;
@@ -95,7 +93,7 @@ $breakpoint-tablet: 1100px;
     background-color: #27221f;
     border-radius: 0.5em;
   }
-  
+
   .overlay-text {
     padding: 2em;
     font-size: 1.5em;
@@ -151,8 +149,3 @@ $breakpoint-tablet: 1100px;
 .story-group:first-child {
   margin-top: 2em;
 }
-
-
-
-
-

@@ -17,11 +17,14 @@ $breakpoint-tablet: 1100px;
   }
   .story-text {
     background: rgb(20, 20, 20);
-    min-width: 20em;
-    font-size: 1.8em;
+    min-width: 18em;
+    font-size: 1.1em;
     text-align: justify;
     border-radius: 0.5em;
     padding: 1em;
+  }
+  .professional-image {
+    width: 18em;
   }
 }
 
@@ -56,6 +59,9 @@ $breakpoint-tablet: 1100px;
     padding: 1em;
     border-radius: 0.5em;
   }
+  .professional-image {
+    width: 30em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -73,7 +79,6 @@ $breakpoint-tablet: 1100px;
   flex-direction: column;
   position: relative;
   height: 100%;
-  width: 30em;
   margin: 0 3em;
 }
 
@@ -133,7 +138,7 @@ $breakpoint-tablet: 1100px;
 
 .professional-text {
   p {
-    font-size: 3em;
+    font-size: 1em;
     text-align: center;
     width: 15em;
     margin: 0.8em 0;

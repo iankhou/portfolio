@@ -47,6 +47,9 @@ $breakpoint-tablet: 1100px;
     border-radius: 0.5em;
     padding: 1em;
   }
+  .profile-image {
+    width: 27em;
+  }
 }
 
 @media (max-width: $breakpoint-tablet) {
@@ -71,15 +74,15 @@ $breakpoint-tablet: 1100px;
     display: none;
   }
   .xueImage {
-    height: 40em;
+    height: 35em;
   }
   .profile-text {
     h1 {
-      font-size: 3em;
+      font-size: 2em;
       margin: 0 0;
     }
     p {
-      font-size: 1.5em;
+      font-size: 1.3em;
       text-align: left;
       width: 17em;
     }
@@ -87,6 +90,14 @@ $breakpoint-tablet: 1100px;
     margin-top: 2em;
     margin-bottom: 10em;
   }
+  .profile-image {
+    width: 20em;
+  }
+}
+
+.xueImageContainer {
+  display: flex;
+  align-items: center;
 }
 
 .profile-image {
@@ -94,7 +105,6 @@ $breakpoint-tablet: 1100px;
     width: 100%;
     border-radius: 0.5em;
   }
-  width: 27em;
 }
 
 #nycVideo {
