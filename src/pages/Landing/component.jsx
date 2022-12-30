@@ -1,4 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, {
+  useState,
+  useEffect,
+  // useRef
+} from "react";
 import { Link } from "react-router-dom";
 import Loading from "../Loading";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -15,18 +19,21 @@ const Landing = () => {
   }, []);
 
   const LandingComponent = () => {
-    const contentRef = useRef(null);
+    // const contentRef = useRef(null);
 
-    useEffect(() => {
-      contentRef.current.scrollIntoView({ behavior: "smooth" });
-    }, []);
+    // useEffect(() => {
+    //   contentRef.current.scrollIntoView({ behavior: "smooth" });
+    // }, []);
 
     return (
       <>
         <video autoPlay muted playsinline loop id="nycVideo">
           <source src="videos/nyc.mp4" type="video/mp4" />
         </video>
-        <div ref={contentRef} className="content">
+        <div
+          // ref={contentRef}
+          className="content"
+        >
           <div className="quote">{data.quote}</div>
           <div className="xueImageContainer">
             <img
