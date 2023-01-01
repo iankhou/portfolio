@@ -26,6 +26,12 @@ const Professional = () => {
 
   const ProfessionalComponent = () => (
     <div>
+      <video autoPlay muted playsinline loop class="background-video">
+        <source
+          src="https://cdn-142.anonfiles.com/P5c8C7Pby4/3e000e16-1672612686/hudson_yards2048.webm"
+          type="video/mp4"
+        />
+      </video>
       <div className="content">
         <Parallax x={["300px", "-300px"]} className="parallax-image">
           <img

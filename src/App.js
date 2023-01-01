@@ -13,7 +13,7 @@ function App() {
         <Route path="/" exact element={<Landing />} />
         <Route path="/professional" element={<Professional />} />
         <Route path="/personality" element={<Personality />} />
-        <Route path="*" element={<Landing />} />
+        <Route path="/*" element={<Landing />} />
         <Route element={<Landing />} />
       </Routes>
     </ParallaxProvider>
