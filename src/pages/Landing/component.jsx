@@ -51,7 +51,7 @@ const Landing = () => {
             <div className="centered-image">
               <ScrollAnimation animateIn="fadeIn">
                 <div className="profile-image">
-                  <img src="/images/profile1.jpg" alt="profile" />
+                  <img src="/images/profile.jpg" alt="profile" />
                 </div>
               </ScrollAnimation>
             </div>

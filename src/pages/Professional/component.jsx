@@ -153,9 +153,9 @@ const Resume = () => (
   <div className="resume-box">
     <div className="professional-text">
       <p>
-        Please contact me by{" "}
-        <a className="email-link" href="mailto:iankwanhou@gmail.com">
-          email
+        Please contact me on{" "}
+        <a className="email-link" href="https://www.linkedin.com/in/ian-k-hou/">
+          LinkedIn
         </a>{" "}
         for my resume.
       </p>
