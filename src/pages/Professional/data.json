@@ -13,7 +13,7 @@
                 "Git"
             ],
             "title": "Amazon Ads",
-            "text": "At Amazon Ads, I work for an internal team that builds tools for advertising products at Amazon. These tools enable our teams to better analyze the health of their applications and diagnose problems that arise in production. They also streamline the process by which we deploy code and deliver solutions to our customers.",
+            "text": "At Amazon Ads, I work for a core infrastructure team that builds tools for advertising campaigns at Amazon. Our tools enable hasty and in-depth problem management, better analysis of the health of applications, and constant improvements to the developer experience. In my role, I have deployed several improvements to generalize an internal logging tool that monitors the health of our applications, held design reviews and implemented backend changes for optimal error handling, and worked with my team to determine a future platform for our downstream applications.",
             "alt": "Amazon Ads"
         },
         {
