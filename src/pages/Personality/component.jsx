@@ -22,7 +22,6 @@ const Personality = () => {
     setIsLoading(false);
   }, []);
 
-  // const [content, setContent] = useState(true);
   const content = true;
 
   const PersonalityComponent = () => (

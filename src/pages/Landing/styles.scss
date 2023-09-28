@@ -123,8 +123,6 @@ $breakpoint-phone: 700px;
 @media screen and (max-width: $breakpoint-phone) {
   .profile-box {
     max-width: 25em;
-
-    // border-width: 0.2em;
     background: none;
     border: none;
     h1 {

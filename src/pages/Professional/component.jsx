@@ -1,5 +1,4 @@
 /* eslint-disable react/forbid-prop-types */
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-danger */
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/click-events-have-key-events */

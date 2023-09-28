@@ -1,7 +1,6 @@
 import React, {
   useState,
   useEffect,
-  // useRef
 } from "react";
 import { Link } from "react-router-dom";
 import Loading from "../Loading";
@@ -19,12 +18,6 @@ const Landing = () => {
   }, []);
 
   const LandingComponent = () => {
-    // const contentRef = useRef(null);
-
-    // useEffect(() => {
-    //   contentRef.current.scrollIntoView({ behavior: "smooth" });
-    // }, []);
-
     return (
       <>
         <video autoPlay muted playsinline loop class="background-video">
@@ -34,7 +27,6 @@ const Landing = () => {
           />
         </video>
         <div
-          // ref={contentRef}
           className="content"
         >
           <div className="quote">{data.quote}</div>
