@@ -48,16 +48,9 @@ const Landing = () => {
         </div>
         <div className="content">
           <div className="content-box">
-            <div className="centered-image">
-              <ScrollAnimation animateIn="fadeIn">
-                <div className="profile-image">
-                  <img src="/images/profile.jpg" alt="profile" />
-                </div>
-              </ScrollAnimation>
-            </div>
-
             <ScrollAnimation animateIn="fadeIn">
-              <div className="profile-text">
+              
+              <div className="profile-box">
                 <h1>{data.title}</h1>
                 <p>{data.career}</p>
                 <div className="professional-box">
@@ -93,9 +86,12 @@ const Landing = () => {
                 </div>
 
                 <p>{data.personal}</p>
-                <Link to="/personality" className="nav-link-button">
-                  Personal
-                </Link>
+                <div className="professional-box">
+                  <Link to="/personality" className="nav-link-button">
+                    Personal
+                  </Link>
+                </div>
+                
               </div>
             </ScrollAnimation>
           </div>

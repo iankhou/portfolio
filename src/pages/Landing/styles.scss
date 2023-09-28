@@ -4,7 +4,23 @@ html {
 }
 
 $breakpoint-tablet: 1100px;
-@media (min-width: $breakpoint-tablet) {
+$breakpoint-phone: 700px;
+
+.profile-box {
+  background: #27221fb7;
+  border-radius: 0.5em;
+  border-style: solid; 
+  border-width: 0.7em;
+  padding: 2em;
+  h1 {
+    margin: 0;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
   .content {
     display: flex;
     flex-direction: row;
@@ -19,6 +35,7 @@ $breakpoint-tablet: 1100px;
     display: flex;
     flex-direction: row;
     margin: 2em;
+    align-items: center;
   }
   .quote {
     display: flex;
@@ -31,28 +48,39 @@ $breakpoint-tablet: 1100px;
   .xueImage {
     height: 85vh;
   }
-  .profile-text {
+  .profile-box {
+    width: 50em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     h1 {
-      font-size: 3em;
-      margin: 0 0;
+      font-size: 5em;
     }
     p {
       font-size: 1.5em;
-      text-align: left;
-      width: 15em;
+      width: 17em;
       margin: 0.8em 0;
     }
-    margin: 0 0 0 1em;
-    background: #27221fb7;
-    border-radius: 0.5em;
-    padding: 1em;
-  }
-  .profile-image {
-    width: 27em;
+    .professional-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 19em;
+      padding-left: 2.5em;
+    }
   }
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+  .profile-box {
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.6em;
+      max-width: 17.5em;
+    }
+  }
   .content {
     display: flex;
     flex-direction: row;
@@ -64,34 +92,15 @@ $breakpoint-tablet: 1100px;
   .content-box {
     display: flex;
     flex-direction: column;
-    margin-top: 50%;
-  }
-  .centered-image {
-    display: flex;
+    align-items: center;
     justify-content: center;
+
   }
   .quote {
     display: none;
   }
   .xueImage {
     height: 35em;
-  }
-  .profile-text {
-    h1 {
-      font-size: 2em;
-      margin: 0 0;
-    }
-    p {
-      font-size: 1.3em;
-      text-align: left;
-      width: 17em;
-    }
-    width: 100%;
-    margin-top: 2em;
-    margin-bottom: 10em;
-  }
-  .profile-image {
-    width: 20em;
   }
 }
 
@@ -100,16 +109,64 @@ $breakpoint-tablet: 1100px;
   align-items: center;
 }
 
-.profile-image {
-  img {
-    width: 100%;
-    border-radius: 0.5em;
+.professional-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.media-icon {
+  margin: 0.5em;
+}
+
+@media screen and (max-width: $breakpoint-phone) {
+  .profile-box {
+    max-width: 25em;
+
+    // border-width: 0.2em;
+    background: none;
+    border: none;
+    h1 {
+      font-size: 7vw;
+    }
+    p {
+      font-size: 5vw;
+      max-width: 15em;
+    }
   }
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1em;
+    width: 100%;
+  }
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .quote {
+    display: none;
+  }
+  .xueImage {
+    height: 35em;
+  }
+}
+
+.xueImageContainer {
+  display: flex;
+  align-items: center;
 }
 
 .professional-box {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
 }
