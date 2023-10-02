@@ -44,7 +44,7 @@ const Professional = () => {
         <Parallax className="parallax-image" x={["-300px", "300px"]}>
           <div className="vert-image-stack">
             <img
-              src="/images/mbp2.png"
+              src="/images/mbp.png"
               alt="Macbook Pro"
               className="tigers tiger-right fade-in"
             />
