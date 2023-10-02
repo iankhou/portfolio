@@ -20,7 +20,32 @@ $breakpoint-phone: 700px;
   }
 }
 
+.nav-link-button {
+  display: inline-block;
+  border: 0.2em solid white;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.3em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin: 0.5em;
+}
+
+.nav-link-button:hover {
+  border: 0.3em solid white;
+  transition-duration: 0.5s;
+}
+
 @media screen and (min-width: $breakpoint-tablet) {
+  .nav-link-button {
+    font-size: 1.5em;
+  }
+  .nav-link-button:hover {
+    transition-duration: 0.5s;
+  }
+  
+  
   .content {
     display: flex;
     flex-direction: row;
@@ -63,10 +88,18 @@ $breakpoint-phone: 700px;
     }
     .professional-box {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 19em;
       padding-left: 2.5em;
+    }
+    .professional-box:first-of-type {
+      margin-bottom: -4em;
+      z-index: 1;
+    }
+    .professional-box:last-of-type {
+      margin-top: -4em;
     }
   }
 }
@@ -126,7 +159,7 @@ $breakpoint-phone: 700px;
     background: none;
     border: none;
     h1 {
-      font-size: 7vw;
+      font-size: 6.7vw;
     }
     p {
       font-size: 5vw;

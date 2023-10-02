@@ -49,6 +49,8 @@ const Landing = () => {
                   <Link to="/professional" className="nav-link-button">
                     Professional
                   </Link>
+                 
+                 <div>
                   {/* link for Github */}
                   <a
                     href="https://github.com/iankhou"
@@ -75,6 +77,8 @@ const Landing = () => {
                       width="48px"
                     />
                   </a>
+
+                  </div>
                 </div>
 
                 <p>{data.personal}</p>
