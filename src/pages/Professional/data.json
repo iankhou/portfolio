@@ -1,6 +1,20 @@
 {
     "entries": [
         {
+            "image": "images/army-cyber.png",
+            "link": "https://www.arcyber.army.mil/",
+            "tags": [
+                "Leadership",
+                "Cyber Operations",
+                "Electronic Warfare",
+                "Information Operations",
+                "Project Management"
+            ],
+            "title": "Army Cyber",
+            "text": "After ROTC I commissioned into the Army's Cyber branch. Serving as a Cyber Officer has been an honor and a privilege, as the role allows provides for far reaching impacts and responsibilities. I am excited about the future of Army Cyber and my personal role in shaping it.",
+            "alt": "Army Cyber"
+        },
+        {
             "image": "images/amazon_ads.png",
             "link": "https://advertising.amazon.com/",
             "tags": [
@@ -30,7 +44,7 @@
                 "Git"
             ],
             "title": "Requipper",
-            "text": "CEO Alex Friedman had a problem. He was spending way too much of his time managing shopping listings between Requipper's internal inventory and other third-party sellers. My first task was to solve this problem by any means possible. I started off automating listing updates from those third party sellers, using Selenium scripts running on a Google Cloud server. Beyond that, I helped to increase brand awareness by creating automatic listing uploads to Google Merchant Center, where we could advertise our products. Working for Alex made me constantly think on my feet for innovative and unconventional solutions.",
+            "text": "CEO Alex F. had a problem. He was spending way too much of his time managing shopping listings between Requipper's internal inventory and other third-party sellers. My first task was to solve this problem by any means possible. I started off automating listing updates from those third party sellers, using Selenium scripts running on a Google Cloud server. Beyond that, I helped to increase brand awareness by creating automatic listing uploads to Google Merchant Center, where we could advertise our products. Working for Alex made me constantly think on my feet for innovative and unconventional solutions.",
             "alt": "Requipper"
         },
         {
@@ -108,10 +122,12 @@
             "link": "https://www.army.mil/",
             "tags": [
                 "Leadership",
-                "Duty",
-                "Service"
+                "Service",
+                "Information Operations",
+                "Targeting",
+                "Inteligence Synthesis"
             ],
-            "title": "US Army",
+            "title": "US Army (Enlisted and ROTC)",
             "text": "Between finding purpose in serving my local and national community and meeting soldiers from all walks of life, my experience in the Army has been eye-opening and deeply satisfying. I served as an intelligence analyst from 2017 to 2019. I am currently serving in the Cyber Protection Brigade, having commissioned as a cyber officer out of Dartmouth ROTC in 2022.",
             "alt": "Army"
         }
