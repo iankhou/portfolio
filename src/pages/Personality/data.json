@@ -4,34 +4,12 @@
             "dir":"/images/nature",
             "smallDir":"/images/nature_small",
             "topLeft":"summer_hike.jpg",
-            "bottomLeft":"acadia_ray.jpg",
-            "center":"cape_cod.jpg",
+            "bottomLeft":"acadia.jpg",
+            "center":"ben_nh.jpg",
             "topRight":"hogs.jpg",
             "bottomRight":"jack_bike.jpg",
             "caption":"Although the pandemic turned my routines and plans upside-down, I still managed to find pleasure in traveling locally. Enjoy these scenes and images from the Great Northeast.",
             "tags":["outdoors", "nature", "family", "travel"]
-        },
-        {
-            "dir":"/images/army",
-            "smallDir":"/images/army_small",
-            "topLeft":"graduation.jpg",
-            "bottomLeft":"mre.jpg",
-            "center":"winter_bike.jpg",
-            "topRight":"formation.jpg",
-            "bottomRight":"army_ftx_me.jpg",
-            "caption":"I enlisted in the Army out of high school, having been bored by constant schooling for over 12 years. I went to basic training and advanced individual training over what would have been a normal school year. I'm now a cadet in Army ROTC at Dartmouth.",
-            "tags":["military", "leadership"]
-        },
-        {
-            "dir":"/images/outdoors",
-            "smallDir":"/images/outdoors_small",
-            "topLeft":"trips_2018.jpg",
-            "bottomLeft":"ice_climbing.jpg",
-            "center":"trips_2019.jpg",
-            "topRight":"kayak_nour.jpg",
-            "bottomRight":"sport_climb.jpg",
-            "caption":"My experience in the Dartmouth Outing Club began with attending First-Year Trips in 2018. Since then, I've gone on many more trips with friends and strangers, and become a trip leader myself, as well as a leader in People of Color Outdoors, Ledyard Canoe Club, and Bait and Bullet.",
-            "tags":["outdoors", "leadership", "trips"]
         },
         {
             "dir":"/images/food",
