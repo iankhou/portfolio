@@ -1,6 +1,17 @@
 {
     "entries": [
         {
+            "dir":"/images/dive",
+            "smallDir":"/images/dive_small",
+            "topLeft":"tuxedo_urchin.jpg",
+            "bottomLeft":"hello_underwater.jpg",
+            "center":"surface_portrait.jpg",
+            "topRight":"sponge.jpg",
+            "bottomRight":"fish_under_rock.jpg",
+            "caption":"I certified as a PADI Open Water Diver in June 2023. Since then, I've gotten my Nitrox certification, as well as Advanced Open Water. Here are some of the pictures I've taken on my GoPro!",
+            "tags":["dive", "nature", "ocean", "travel"]
+        },
+        {
             "dir":"/images/nature",
             "smallDir":"/images/nature_small",
             "topLeft":"summer_hike.jpg",
