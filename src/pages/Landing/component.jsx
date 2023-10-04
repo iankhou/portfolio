@@ -34,8 +34,8 @@ const Landing = () => {
             <img
               className="xueImage"
               src="/images/xue.png"
-              width={200}
-              height={560}
+              width={220}
+              height={739}
               alt="xue wu zhi jing"
             />
           </div>
