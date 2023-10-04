@@ -34,8 +34,8 @@ const Landing = () => {
             <img
               className="xueImage"
               src="/images/xue.png"
-              width={220}
-              height={739}
+              width={330}
+              height={840}
               alt="xue wu zhi jing"
             />
           </div>
@@ -63,6 +63,8 @@ const Landing = () => {
                       className="media-icon"
                       src="https://img.icons8.com/color-glass/48/github.png"
                       alt="github"
+                      width="48px"
+                      height="48px"
                     />
                   </a>
                   {/* link for LinkedIn */}
@@ -77,6 +79,7 @@ const Landing = () => {
                       src="https://brand.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
                       alt="linkedin"
                       width="48px"
+                      height="48px"
                     />
                   </a>
 
