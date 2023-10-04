@@ -1,5 +1,7 @@
 $breakpoint-tablet: 1100px;
-@media (max-width: $breakpoint-tablet) {
+$breakpoint-phone: 700px;
+
+@media screen and (max-width: $breakpoint-tablet) {
   .story-tags {
     display: flex;
     flex-direction: row;
@@ -13,7 +15,7 @@ $breakpoint-tablet: 1100px;
     display: none;
   }
 }
-@media (min-width: $breakpoint-tablet) {
+@media screen and (min-width: $breakpoint-tablet) {
   .story-tags {
     display: flex;
     flex-direction: row;
@@ -22,6 +24,15 @@ $breakpoint-tablet: 1100px;
     margin-top: 0.5em;
     min-width: 18em;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: $breakpoint-phone) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
   }
 }
 
