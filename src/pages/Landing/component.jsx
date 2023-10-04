@@ -20,12 +20,12 @@ const Landing = () => {
   const LandingComponent = () => {
     return (
       <>
-        <video autoPlay muted playsinline loop class="background-video">
+        {/* <video autoPlay muted playsinline loop class="background-video">
           <source
             src="https://cdn-101.anonfiles.com/Faf7CdP0y9/94b45fd5-1672613194/nyc.webm"
             type="video/mp4"
           />
-        </video>
+        </video> */}
         <div
           className="content"
         >
