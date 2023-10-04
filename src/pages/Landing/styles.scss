@@ -152,10 +152,12 @@ $breakpoint-phone: 700px;
     background: none;
     border: none;
     h1 {
-      font-size: 6.7vw;
+      // font-size: 6.7vw;
+      font-size:calc(30px + 1.5vw);
     }
     p {
-      font-size: 5vw;
+      // font-size: 5vw;
+      font-size:calc(15px + 1.5vw);
       max-width: 15em;
     }
   }
