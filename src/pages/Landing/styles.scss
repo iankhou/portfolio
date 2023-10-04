@@ -88,18 +88,11 @@ $breakpoint-phone: 700px;
     }
     .professional-box {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
       width: 19em;
       padding-left: 2.5em;
-    }
-    .professional-box:first-of-type {
-      margin-bottom: -4em;
-      z-index: 1;
-    }
-    .professional-box:last-of-type {
-      margin-top: -4em;
     }
   }
 }
