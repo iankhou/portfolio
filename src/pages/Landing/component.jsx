@@ -61,7 +61,7 @@ const Landing = () => {
                   >
                     <img
                       className="media-icon"
-                      src="https://img.icons8.com/color-glass/48/github.png"
+                      src="/images/github.png"
                       alt="github"
                       width="48px"
                       height="48px"
@@ -76,7 +76,7 @@ const Landing = () => {
                     {/* image scaled to 48px */}
                     <img
                       className="media-icon"
-                      src="https://brand.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+                      src="/images/linkedin.png"
                       alt="linkedin"
                       width="48px"
                       height="48px"
